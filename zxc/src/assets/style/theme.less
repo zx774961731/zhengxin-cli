@@ -1,0 +1,124 @@
+@tsl-black: #323233;
+@tsl-blue: #1989fa;
+@tsl-purple: #8080ff;
+@tsl-fuchsia: #a7419e;
+@tsl-green: #4fc08d;
+@tsl-text-color: #34495e;
+@tsl-text-light-blue: rgba(69, 90, 100, 0.6);
+@tsl-background-color: #f7f8fa;
+@tsl-grey: #999;
+@tsl-dark-grey: #666;
+@tsl-light-grey: #ccc;
+@tsl-border-color: #f1f4f8;
+@tsl-code-color: #58727e;
+@tsl-code-background-color: #f1f4f8;
+@tsl-code-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", 
+  "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "DIN", "DIN-Bold", "DIN-Black", "DIN-Medium";
+@tsl-color-base: #F2F3F5;
+@tsl-color-base-hover: #E5E6EB;
+@tsl-color-base-active: #C9CDD4;
+@tsl-color-base-disabled: #F2F3F5;
+@tsl-color-primary: #5E66F2;
+@tsl-color-primary-hover: #7983F5;
+@tsl-color-primary-active: #3A3DC9;
+@tsl-color-primary-disabled: #AFBAFA;
+@tsl-color-primary-warn: #F24949;
+@tsl-color-primary-warn-hover: #F56C68;
+@tsl-color-primary-warn-active: #C92D33;
+@tsl-color-primary-warn-disabled: #FCCEC7;
+@tsl-color-base-warn: #FFECE8;
+@tsl-color-base-warn-hover: #201816;
+@tsl-color-base-warn-active: #FCCEC7;
+@tsl-color-base-warn-disabled: #FFECE8;
+
+// header
+@tsl-header-top-height: 60px;
+@tsl-header-bottom-height: 50px;
+
+@layout-header-padding: 0 15px;
+@layout-sider-padding: 0 5px;
+@layout-footer-padding: 24px 50px;
+@layout-sider-defalut-width: 258px;
+@layout-header-default-height: 64px;
+
+@base-bg-default-color: #fff;
+
+// 垂直间距
+@space-base-height: 24px;
+
+// margin
+@margin-sm: 4px;
+@margin-md: 8px;
+@margin-lg: 16px;
+@margin-xl: 24px;
+@margin-form-item: 32px;
+
+// 导角
+@border-radius-sm: 4px;
+@border-radius-md: 8px;
+
+// 背景色
+@button-background-color-base: @tsl-color-base;
+@button-background-color-base-hover: @tsl-color-base-hover;
+@button-background-color-base-active: @tsl-color-base-active;
+@button-background-color-base-disabled: @tsl-color-base-disabled;
+@button-background-color-primary: @tsl-color-primary;
+@button-background-color-primary-hover: @tsl-color-primary-hover;
+@button-background-color-primary-active: @tsl-color-primary-active;
+@button-background-color-primary-disabled: @tsl-color-primary-disabled;
+@button-background-color-primary-warn: @tsl-color-primary-warn;
+@button-background-color-primary-warn-hover: @tsl-color-primary-warn-hover;
+@button-background-color-primary-warn-active: @tsl-color-primary-warn-active;
+@button-background-color-primary-warn-disabled: @tsl-color-primary-warn-disabled;
+@button-background-color-base-warn: @tsl-color-base-warn;
+@button-background-color-base-warn-hover: @tsl-color-base-warn-hover;
+@button-background-color-base-warn-active: @tsl-color-base-warn-active;
+@button-background-color-base-warn-disabled: @tsl-color-base-warn-disabled;
+
+// border-color
+@border-color-input-default: #E5E6EB;
+@border-color-default: #E5E6EB;
+@border-color-primary: #5E66F2;
+
+// input
+@input-placeholder-color-default: #C9CDD4;
+
+// 字重
+@font-weight-light: 300;
+@font-weight-normal: 400;
+@font-weight-bold: 500;
+
+// text-color
+@text-color-white: #fff;
+@text-color-normal: #4e5969;
+@text-color-primary: #1d2129;
+@text-modal-color: #111C34;
+@text-modal-placeholder-color: #C9CDD4;
+@text-table-color: #5E66F2;
+
+// 字体尺寸
+@font-size-xs: 12px;
+@font-size-base: 14px;
+@font-size-md: 18px;
+@font-size-lg: 24px;
+@font-size-xl: 30px;
+
+// table
+@table-border-color: #F2F3F5;
+
+//theme
+@tsl-theme-color1: var(--tslThemeBgColor1, @base-bg-default-color);
+@tsl-theme-color2: var(--tslThemeBgColor2, @tsl-background-color);
+@tsl-theme-text-color: var(--tslThemeTextColor, @tsl-text-color);
+@tsl-theme-border-color: var(--tslThemeBorderColor,@tsl-border-color);
+@tsl-theme-hover-color: var(--tslThemeHoverColor);
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+
+@form-required:#F24949;
+@button-cancel-color: #192D42;

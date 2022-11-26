@@ -1,0 +1,103 @@
+@import "./font.less";
+@import "./var.less";
+
+html,
+body,
+#app {
+  .size(100%,100%);
+
+  margin: 0;
+  padding: 0;
+  font-family: @tsl-code-font-family !important;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, p, hr, /*结构元素*/
+	ul, ol, li, dl, dt, dd, /*列表元素*/
+	form, fieldset, legend, input, button, select, textarea, /*表单元素*/
+	th, td, /*表格元素*/
+	pre {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.fl {
+  display: inline;
+  float: left;
+}
+.fr {
+  display: inline;
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+}
+.clearfix::after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: @tsl-theme-color1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: @tsl-theme-border-color;
+  border-radius: 6px;
+}
+
+body[data-theme="default"] {
+  // --tslThemeBgColor1: rgb(255, 255, 255);
+  --tslThemeBgColor1: @tsl-background-color;
+  --tslThemeBgColor2: rgb(247, 248, 250);
+  --tslThemeTextColor: rgb(48, 49, 51);
+  --tslThemeBorderColor: rgb(243, 243, 243);
+  --tslThemeHoverColor: rgb(238, 242, 248);
+}
+body[data-theme="dark"] {
+  --tslThemeBgColor1: rgb(51, 51, 51);
+  --tslThemeBgColor2: rgb(30, 30, 30);
+  --tslThemeTextColor: rgb(255, 255, 255);
+  --tslThemeBorderColor: rgb(20, 20, 20);
+  --tslThemeHoverColor: rgb(82, 82, 82);
+}

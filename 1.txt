@@ -1,0 +1,5 @@
+1.初始化项目 index.js 入口文件 第一行:#!/usr/bin/env node 配置环境
+2.在package.json里添加bin 指令 zx:index.js 然后 npm link 建立链接
+3.安装commander  配置版本号program.version(require('./package.json').version, '-v,--version'); program.parse(process.argv);
+4.编写命令 program.option('-w --why', '这是一个test'); program.command('create <project> [others...]').description('创建一个项目:zx create xx项目 参数').action(createAction);
+5.download-git-repo库  用自带的utils模块里面的promisify 包裹 将回调函数变成promise download(vueRepo, project, { clone: true });下载git长仓库 
